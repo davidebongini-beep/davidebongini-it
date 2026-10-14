@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Davide Bongini | Oro fisico 999,9 LBMA con I Feel Gold</title>
+<meta name="description" content="Davide Bongini, Sales Manager di I Feel Gold S.p.A., Banco Metalli iscritto OAM OPO363. Oro fisico 999,9 LBMA.">
+<style>
+  :root {
+    --paper: #f6f7f4;
+    --ink: #1c2530;
+    --muted: #55606b;
+    --brass: #8f6a22;
+    --brass-soft: #c9a24d;
+    --line: #d8dbd4;
+    --measure: 62ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151a20;
+      --ink: #eceee9;
+      --muted: #a2abb3;
+      --brass: #d3ad5b;
+      --brass-soft: #8f6a22;
+      --line: #2c343d;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .wrap { width: min(100% - 2.5rem, 62rem); margin-inline: auto; }
+
+  header.top { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .name { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-size: 1.25rem; font-weight: 600; letter-spacing: .01em; }
+  .role { color: var(--muted); font-size: .95rem; }
+
+  .hero { padding: clamp(3rem, 9vw, 7rem) 0 clamp(2.5rem, 7vw, 5rem); position: relative; overflow: hidden; }
+  .hero .wrap { position: relative; }
+  .stamp {
+    position: absolute; right: -.5rem; top: -1rem;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(6rem, 22vw, 15rem); line-height: 1; font-weight: 700;
+    color: transparent; -webkit-text-stroke: 1.5px var(--brass-soft);
+    opacity: .55; user-select: none; pointer-events: none;
+  }
+  .hero h1 {
+    position: relative;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600; font-size: clamp(2rem, 5.6vw, 3.6rem); line-height: 1.12;
+    letter-spacing: -.01em; max-width: 20ch; margin: 0 0 1.5rem;
+  }
+  .hero p.lead { position: relative; max-width: var(--measure); color: var(--muted); font-size: 1.15rem; margin: 0 0 2rem; }
+  .btn {
+    display: inline-block; padding: .85rem 1.5rem; border: 1.5px solid var(--ink);
+    color: var(--ink); text-decoration: none; font-weight: 600; border-radius: 2px;
+    transition: background-color .15s, color .15s;
+  }
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+
+  section.block { border-top: 1px solid var(--line); padding: clamp(2rem, 5vw, 3.5rem) 0; }
+  section.block .wrap { display: grid; grid-template-columns: 1fr; gap: 1rem 3rem; }
+  @media (min-width: 52rem) { section.block .wrap { grid-template-columns: 14rem 1fr; } }
+  section.block h2 {
+    margin: 0; font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.35rem; font-weight: 600; line-height: 1.25;
+  }
+  section.block .body { max-width: var(--measure); }
+  section.block .body p { margin: 0 0 1rem; }
+  section.block .body p:last-child { margin-bottom: 0; }
+  dl.facts { margin: 0; display: grid; grid-template-columns: 1fr; gap: .25rem 2rem; }
+  @media (min-width: 40rem) { dl.facts { grid-template-columns: 11rem 1fr; } }
+  dl.facts dt { color: var(--muted); }
+  dl.facts dd { margin: 0 0 .75rem; font-weight: 500; }
+  @media (min-width: 40rem) { dl.facts dd { margin-bottom: .5rem; } }
+
+  a.mail { color: var(--ink); font-weight: 600; text-decoration-color: var(--brass); text-underline-offset: .2em; text-decoration-thickness: 2px; word-break: break-word; }
+
+  footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: .9rem; }
+  footer p { margin: 0 0 .6rem; max-width: 80ch; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="name">Davide Bongini</span>
+    <span class="role">Sales Manager, I Feel Gold S.p.A.</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="stamp" aria-hidden="true">999,9</div>
+      <h1>Oro fisico 999,9 LBMA, con un Banco Metalli regolato.</h1>
+      <p class="lead">Sono Davide Bongini, Sales Manager di I Feel Gold S.p.A. Qui trovi, in modo semplice, cos'è il servizio e come funziona.</p>
+      <a class="btn" href="mailto:d.bongini@davidebongini.it">Scrivimi</a>
+    </div>
+  </section>
+
+  <section class="block" id="azienda">
+    <div class="wrap">
+      <h2>Chi è I Feel Gold</h2>
+      <div class="body">
+        <p>I Feel Gold S.p.A. è un Banco Metalli (O.P.O.) iscritto all'OAM con codice OPO363 e regolato dal D.Lgs. 211/2024.</p>
+        <p>Opera nella compravendita di oro fisico 999,9 LBMA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="servizio">
+    <div class="wrap">
+      <h2>Il servizio</h2>
+      <div class="body">
+        <p>La compravendita ciclica programmata (CCP) si svolge con un contratto di compravendita per conto terzi.</p>
+        <p>Il deposito affidato diventa capitale per compravendita. Al termine del contratto il cliente riceve il ricavato in oro fisico.</p>
+        <p>I costi sono reali e documentati. Lo scioglimento anticipato del contratto è possibile nei casi previsti per legge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="custodia">
+    <div class="wrap">
+      <h2>Custodia e assicurazione</h2>
+      <div class="body">
+        <dl class="facts">
+          <dt>Custodia</dt><dd>Brink's, Malca-Amit, Ferrari</dd>
+          <dt>Assicurazioni</dt><dd>Lloyd's, Zurich, Generali</dd>
+          <dt>Transazione minima</dt><dd>5 g di oro fisico</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contatti">
+    <div class="wrap">
+      <h2>Parliamone</h2>
+      <div class="body">
+        <p>Se vuoi capire come funziona il servizio, scrivimi:</p>
+        <p><a class="mail" href="mailto:d.bongini@davidebongini.it">d.bongini@davidebongini.it</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>I Feel Gold S.p.A.</strong> Banco Metalli, iscrizione OAM OPO363 (D.Lgs. 211/2024). P.IVA 10282170967.</p>
+    <p>Sede legale: Piazza in Campo Marzio 3, Roma. Sede operativa: Via Degli Apostoli 5, Livorno. Email: info@ifeelgold.it</p>
+    <p>Pagina personale di Davide Bongini. Le informazioni hanno carattere divulgativo e non costituiscono una proposta contrattuale: valgono le condizioni del contratto.</p>
+  </div>
+</footer>
+
+</body>
+</html>
