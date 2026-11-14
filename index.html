@@ -68,6 +68,10 @@
   }
   .btn:hover { background: transparent; color: var(--ink); }
   .hero h1 { max-width: 24ch; }
+  @media (min-width: 56rem) { .hero .wrap { grid-template-columns: 1.15fr .85fr; gap: 3rem; } }
+  figure.shot { margin: 0; }
+  figure.shot img { display: block; width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--line); }
+  #azienda figure.shot, #servizio figure.shot { margin: 1.5rem 0; }
   .hero .wrap > div { border-left: 3px solid var(--brass); padding-left: clamp(1rem, 3vw, 2rem); }
 
   section.block { border-top: 1px solid var(--line); padding: clamp(2.25rem, 5vw, 4rem) 0; }
@@ -133,6 +137,9 @@
         <p class="lead">Come funziona la compravendita ciclica programmata, spiegata passo per passo da chi se ne occupa direttamente.</p>
         <a class="btn" href="mailto:d.bongini@davidebongini.it">Scrivimi</a>
       </div>
+      <figure class="shot">
+        <img src="img/ifg-lingotti.jpg" alt="Tre lingotti d'oro con il marchio I Feel Gold, su un piano nero davanti al logo" width="1078" height="666" fetchpriority="high">
+      </figure>
     </div>
   </section>
 
@@ -148,6 +155,9 @@
           <dt>Sede legale</dt><dd>Roma</dd>
           <dt>Custodia e assicurazione</dt><dd>Operatori internazionali, dettagli nella sezione dedicata</dd>
         </dl>
+        <figure class="shot">
+          <img src="img/ifg-lingotto-50g.jpg" alt="Lingotto d'oro 999,9 con il marchio I Feel Gold appoggiato su un tavolo" width="1079" height="573" loading="lazy">
+        </figure>
         <p><a class="more" href="#servizio">Scopri come funziona il servizio</a></p>
       </div>
     </div>
@@ -163,6 +173,9 @@
           <li><span class="n">3</span><p><strong>Ricavato.</strong> Al termine del contratto ricevi il ricavato in oro fisico.</p></li>
         </ol>
         <p>I costi sono reali e documentati. Per il dettaglio scrivimi: te li illustro sul contratto.</p>
+        <figure class="shot">
+          <img src="img/ifg-lingotti-nero.jpg" alt="Lingotti d'oro di diverso taglio allineati su un panno nero" width="1078" height="719" loading="lazy">
+        </figure>
       </div>
     </div>
   </section>
@@ -180,14 +193,10 @@
     </div>
   </section>
 
-  <section class="block about" id="chi-sono">
+  <section class="block about no-photo" id="chi-sono">
     <div class="wrap">
       <h2>Chi sono</h2>
       <div class="body person">
-        <figure>
-          <img src="foto.jpg" alt="Ritratto di Davide Bongini" width="440" height="550" loading="lazy"
-               onerror="this.closest('.about').classList.add('no-photo')">
-        </figure>
         <div>
           <p>Mi chiamo Davide Bongini e sono Sales Manager di I Feel Gold S.p.A. dal 2023. Ho alle spalle oltre vent'anni di lavoro commerciale e di relazione con le persone.</p>
           <p>Mi occupo dello sviluppo commerciale e rispondo di persona a chi vuole capire come funziona il servizio, senza impegno.</p>
