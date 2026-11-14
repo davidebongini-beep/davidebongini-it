@@ -98,6 +98,9 @@
   .about.no-photo figure { display: none; }
   .about.no-photo .person { grid-template-columns: 1fr; }
 
+  a.more { font-weight: 600; color: var(--brass); text-decoration-color: var(--brass); text-decoration-thickness: 2px; text-underline-offset: .22em; }
+  a.more::after { content: " \2193"; }
+  #azienda dl.facts { margin: 1.25rem 0 1.5rem; }
   a.mail { font-weight: 600; text-decoration-color: var(--brass); text-decoration-thickness: 2px; text-underline-offset: .22em; word-break: break-word; font-size: 1.15rem; }
 
   footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: .9rem; }
@@ -127,7 +130,7 @@
       <div>
         <p class="kicker">Sales Manager, I Feel Gold S.p.A.</p>
         <h1>Oro fisico 999,9 LBMA, con un Banco Metalli regolato.</h1>
-        <p class="lead">Qui trovi, in modo semplice, cos'è il servizio e come funziona.</p>
+        <p class="lead">Come funziona la compravendita ciclica programmata, spiegata passo per passo da chi se ne occupa direttamente.</p>
         <a class="btn" href="mailto:d.bongini@davidebongini.it">Scrivimi</a>
       </div>
     </div>
@@ -137,8 +140,15 @@
     <div class="wrap">
       <h2>Chi è I Feel Gold</h2>
       <div class="body">
-        <p>I Feel Gold S.p.A. è un Banco Metalli (O.P.O.) iscritto all'OAM con codice OPO363 e regolato dal D.Lgs. 211/2024.</p>
-        <p>Opera nella compravendita di oro fisico 999,9 LBMA.</p>
+        <p>I Feel Gold S.p.A. è un Banco Metalli: un operatore professionale in oro (O.P.O.) iscritto all'OAM, l'Organismo Agenti e Mediatori, con il codice OPO363. Opera secondo il D.Lgs. 211/2024.</p>
+        <p>L'iscrizione è pubblica e si può verificare sul registro OAM.</p>
+        <dl class="facts">
+          <dt>Attività</dt><dd>Compravendita di oro fisico 999,9 LBMA per conto dei clienti</dd>
+          <dt>Sede operativa</dt><dd>Livorno</dd>
+          <dt>Sede legale</dt><dd>Roma</dd>
+          <dt>Custodia e assicurazione</dt><dd>Operatori internazionali, dettagli nella sezione dedicata</dd>
+        </dl>
+        <p><a class="more" href="#servizio">Scopri come funziona il servizio</a></p>
       </div>
     </div>
   </section>
@@ -148,11 +158,11 @@
       <h2>Il servizio</h2>
       <div class="body">
         <ol class="steps">
-          <li><span class="n">1</span><p>La compravendita ciclica programmata (CCP) si svolge con un contratto di compravendita per conto terzi.</p></li>
-          <li><span class="n">2</span><p>Il deposito affidato diventa capitale per compravendita.</p></li>
-          <li><span class="n">3</span><p>Al termine del contratto il cliente riceve il ricavato in oro fisico.</p></li>
+          <li><span class="n">1</span><p><strong>Contratto.</strong> Con la compravendita ciclica programmata (CCP) firmi un contratto di compravendita per conto terzi: incarichi il Banco Metalli di comprare e rivendere oro fisico secondo un programma.</p></li>
+          <li><span class="n">2</span><p><strong>Deposito.</strong> Il deposito che affidi diventa il capitale per le compravendite.</p></li>
+          <li><span class="n">3</span><p><strong>Ricavato.</strong> Al termine del contratto ricevi il ricavato in oro fisico.</p></li>
         </ol>
-        <p>I costi sono reali e documentati.</p>
+        <p>I costi sono reali e documentati. Per il dettaglio scrivimi: te li illustro sul contratto.</p>
       </div>
     </div>
   </section>
@@ -179,8 +189,8 @@
                onerror="this.closest('.about').classList.add('no-photo')">
         </figure>
         <div>
-          <p>Mi chiamo Davide Bongini e sono Sales Manager di I Feel Gold S.p.A.</p>
-          <p>Mi occupo dello sviluppo commerciale e rispondo di persona a chi vuole capire come funziona il servizio.</p>
+          <p>Mi chiamo Davide Bongini e sono Sales Manager di I Feel Gold S.p.A. dal 2023. Ho alle spalle oltre vent'anni di lavoro commerciale e di relazione con le persone.</p>
+          <p>Mi occupo dello sviluppo commerciale e rispondo di persona a chi vuole capire come funziona il servizio, senza impegno.</p>
         </div>
       </div>
     </div>
